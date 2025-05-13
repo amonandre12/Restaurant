@@ -1015,6 +1015,7 @@ transition: width 0.3 ease;
 position: absolute;
 margin-top: 23px;
 }
+
 .paraTartine  {
     position: relative;
     left: 350px;
@@ -1204,7 +1205,7 @@ left: 190px;
 
 .headerPara1 {
 position: relative;
-bottom: 24px;
+bottom: 25px;
 /* position: fixed; */
 /* z-index: 1; */
 }
