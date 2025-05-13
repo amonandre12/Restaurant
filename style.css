@@ -1,1341 +1,1588 @@
-  * {
+body, html {
     margin: 0;
     padding: 0;
-    font-style: oblique;
-    -webkit-font-smoothing: antialiased;
-   }
-
-   main, body {
-    height: 100%;
-    max-width: 100%;
+    font-family: Arial, sans-serif;
     overflow-x: hidden;
-   }
-
-    header a, p {
-    color: #777;
-    font-size: 11px;
-   }
-
-   .arrow {
-    position: relative;
-    top: 6px;
-   }
-
-   .headerPara {
-    display: flex;
-    flex-direction: row;
-    gap: 25px;
-    /* justify-content: space-around; */
-    /* position: relative; */
-   }
-
-   .headerPara1 {
-    position: relative;
-    bottom: 34px;
-   }
-
-   .title {
-    position: absolute;
-    bottom: -48px;
-    left: 5%;
-   }
-
-   .title1 {
-    font-size: 3em;
-    color: white;
-   }
-
-   .carrouselContent {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-top: 170px;
-   }
-
-   .carrouselContent p {
-    font-size: 14px;
-    width: 100%;
-   }
-
-   .carrouselPara {
-    margin: 20px;
-    }
-   
-  #carrousel {
-    display: flex;
-    flex-direction: row;
-    margin: 6px;
-  }
-
-  .carrouselImage1 img {
-    width: 200px;
-    height: 420px;
-  }
-
-  .carrouselImage2  img{
-    width: 150px;
-    height: 300px;
-    position: relative;
-    top: 52px;
-  }
-
-   .para1 {
-    font-size: 1.95rem;
-    color: white;
-    margin-top: 50px;
-   }
-
-   .groupLinks a  {
-   text-decoration: none;
-   color: #777;
-   font-size: 18px;
+    font-style: italic;
+    /* display: block; */
     
-   }
+}
 
-   .groupLinks {
-    background-color: white;
-    /* border: 1px solid #ccc; */
-    padding: 6px;
-    box-shadow: 0 4px 6px rgba(7, 3, 3, 0.1);
-    width: 390px;
-    z-index: 1000;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    right: 0%;
-    padding-top: 30px;
-    /* margin-left: 10px; */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+header a, p {
+color: #777;
+font-size: 11px;
+}
+
+.aDown {
+  display: block;
+}
+
+header {
+margin: 15px;
+padding: 15px;
+}
+
+.headerPara {
+display: flex;
+flex-direction: row;
+gap: 100px;
+}
+
+
+.titleContent {
+display: flex;
+flex-direction: column;
+position: relative;
+position: fixed;
+z-index: 1000;
+padding: 0 1.5rem 1.75rem;
+}
+
+.link1 {
+    position: relative;
+    bottom: 6px;
+}
+
+.arrow {
+ position: relative;
+ top: 6px;
+}
+
+.headerPara1 {
+ position: relative;
+ bottom: 42px;
+}
+
+
+.command {
+background-color: rgb(200, 126, 30);
+text-align: center;
+transition: 250ms ;
+align-items: center;
+border-radius: 1px;
+cursor: pointer;
+width: 100%;
+padding: 10px 6px;  
+}
+
+.command a {
+color: white;
+}
+
+.command:hover {
+text-decoration: underline;
+}
+
+.bottomHeader {
+display: flex;
+justify-content: space-between;
+margin-top: 20px;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+
+.expedition:hover {
+text-decoration: underline;
+}
+
+.bottomHeader a {
+text-decoration: none;
+color: #777;
+}
+
+
+.bottomHeader img {
+ cursor: pointer;
+ border-radius: 10px;
+} 
+
+.emplacement, .aPropos {
+    display: none;
+}
+
+/* The main style */
+
+/* Premier division styles */
+
+.imageContent {
+height: 100%;
+max-width: 100%;
+}
+
+
+.emplacement, .aPropos {
+display: none;
+}
+
+.title {
+position: absolute;
+bottom: -48px;
+left: 5%;
+}
+
+.title1 {
+font-size: 2em;
+color: white;
+}
+
+.para1 {
+font-size: 1.55rem;
+color: white;
+margin-top: 20px;
+word-spacing: 5px;
+}
+
+/* Division deux styles  */
+
+.linksPlacement {
+display: flex;
+flex-direction: column;
+gap: 27px;
+position: relative;
+margin-left: 20px;
+margin-top: 30px;
+padding: 10px;
+}
+
+.linksEmplacement a {
+text-decoration: none;
+color: #777;
+font-size: 20px;
+}
+
+
+/* Links group1 styles  */
+
+
+.groupLinks {
+background-color: white;
+padding: 6px;
+box-shadow: 0 4px 6px rgba(7, 3, 3, 0.1);
+width: 390px;
+z-index: 1000;
+position: absolute;
+top: 0%;
+left: 0%;
+right: 0%;
+padding-top: 30px;
+padding-bottom: 284px;
+transform: translate(-100%);
+transition: transform 0.3s ease;
+}
+
+
+.groupLinks.open {
+display: block;
+transform: translateX(0);
+}
+
+.groupLinks a  {
+text-decoration: none;
+color: #777;
+font-size: 18px;
+}
+
+
+.groupLinks a:hover {
+text-decoration: underline;
+}
+
+.iconDown  {
+/* display: none; */
+}
+
+.paidLink {
+  margin-bottom: 30px;
+}
+
+
+.LinksTop {
+margin-top: 30px;
+margin-left: 22px;
+}
+
+
+.marginTop {
+margin-top: 20px;
+}
+
+.marginCenter {
+margin-top: 20px;
+}
+
+.marginBottom{
+margin-top: 20px;
+}
+
+
+.linksBottom {
+margin-top: 30px;
+margin-left: 22px;    
+}
+
+
+.linksCenter {
+margin-top: 30px;
+margin-left: 22px;   
+}
+
+
+.groupLinks.open {
+display: block;
+transform: translateX(0);
+}
+
+
+.emplacementTrait {
+width: 350px;
+height: 1px;
+background: yellow;
+transition: width 0.3 ease;
+position: absolute;
+margin-top: 27px;
+}
+
+
+#emplacementOut {
+color: #777;
+font-size: 20px;
+text-decoration: none;
+}
+
+
+.outContent {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+
+.propOut {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin-top: 30px;
+}
+
+#close {
+position: relative;
+bottom: 55px;
+font-size: 28px;
+}
+
+
+.commandTrait {
+width: 350px;
+height: 1px;
+background: yellow;
+transition: width 0.3 ease;
+position: absolute;
+margin-top: 20px;
+}
+
+
+.commandOut {
+position: relative;
+top: 20px;
+}
+
+
+.press {
+position: relative;
+top: 40px;
+}
+
+
+.pressTrait {
+width: 350px;
+height: 1px;
+background: yellow;
+transition: width 0.3 ease;
+position: absolute;
+margin-top: 40px;
+}
+
+
+.emplacementHidden {
+display: none;
+position: relative;
+bottom: 160px;
+z-index: 1000;
+}
+
+
+.emplacementHidden.hidden {
+display: block;
+}
+
+.joinTart{
+position: relative;
+top: 25px;
+}
+
+/* Links group2 styles */
+
+.linksGroup2 {
+position: relative;
+}
+
+.group2Content {
+background-color: white;
+border: 1px solid #ccc;
+padding: 20px;
+box-shadow: 0 4px 6px rgba(7, 3, 3, 0.1);
+width: 125px;
+z-index: 1000;
+display: none;
+position: absolute;
+bottom: 593px;
+left: 18%;
+
+}
+
+
+.links {
+margin-top: 13px;
+}
+
+.group2Content.open1 {
+display: block;
+}
+
+.group2Content a {
+text-decoration: none;
+color: #777;
+font-size: 20px;
+}
+
+.group2Content a:hover {
+text-decoration: underline;
+}
+
+/* Division image styles */
+
+
+.Content2 {
+margin-left: 25px;
+margin-top: 25px;
+}
+
+
+.imageContent2 {
+display: flex;
+flex-direction: row;
+gap: 20px;
+}
+
+.image1Content img {
+width: 160px;
+height: 210px;
+margin: 0 auto;
+border-radius: 10px;
+}
+
+.image1Content p {
+font-size: 12px;
+}
+
+.image2Content img {
+width: 167px;
+height: 210px;
+margin-right: 20px;
+border-radius: 10px;
+}
+
+.image2Content p {
+font-size: 12px;
+}
+
+.imageContent2 a{
+color: #777;
+}
+
+/* The button group styles */
+
+
+.btnLinks {
+position: relative;
+}
+
+
+.btnGroup a {
+color: black;
+text-decoration: none;
+font-size: 11px;
+}
+
+.btnGroup button {
+border: 1px solid yellow;
+/* padding: 10px 24px 10px 24px; */
+width: 178px;
+height: 37px;
+/* text-align: center; */
+cursor: pointer;
+}
+
+
+.btnGroup {
+display: flex;
+flex-direction: row;
+gap: 20px;
+position: absolute;
+right: -1%;
+margin-top: 20px;
+/* margin-left: 10px; */
+margin-right: 10px;
+padding: 3px;
+}
+
+
+.btn  button:hover {
+text-decoration: underline;
+background-color: yellow;
+}
+
+/* Image content styles  */
+
+
+.imageBig  {
+display: flex;
+flex-wrap: wrap-reverse;
+gap: 20px;
+margin: 20px;
+position: relative;
+top: 70px;
+}
+
+.imageBig p {
+font-size: 17px;
+}
+
+.imageBig a {
+color: #777;
+text-decoration: none;
+}
+
+.imageBig a:hover {
+text-decoration: underline;
+}
+
+.imageBig img {
+width: 100%;
+border-radius: 10px;
+}
+
+
+.paragraphContent p {
+word-spacing: 2px;
+font-size:15px;
+}
+
+
+.freeLink {
+width: 255px;
+height: 1px;
+background: yellow;
+transition: width 0.3 ease;
+position: absolute;
+margin-top: 10px;
+}
+
+/*  Container Images  */
+
+
+.imagesContainer img {
+width: 100%;
+border-radius: 10px;
+}
+
+.imagesContainer {
+display: flex;
+flex-direction: column;
+gap: 40px;
+margin: 13px 0;
+padding: 20px;
+margin-top: 95px;
+}
+
+.imagesContainer a {
+color: black;
+text-decoration: none;
+}
+
+
+.prod18Image {
+margin-top: 40px;
+}
+
+.prod18Image p {
+font-size: 17px;
+}
+
+.prod18Image h4 {
+margin-top: 25px;
+}
+
+.prod18Image a {
+position: relative;
+top: 10px;
+}
+
+.prod33Image {
+margin-top: 40px;
+}
+
+
+ 
+.imgBreak {
+    display: none;
+}
+
+
+.prod33Image h4 , p {
+margin-top: 40px;
+}
+
+.prod33Image p {
+font-size: 17px;
+}
+
+.break {
+display: none;
+}
+
+.prod33Image ul {
+margin-left: 30px;
+margin-top: 10px;
+}
+
+.imagesContainer a:hover {
+text-decoration: underline;
+}
+
+
+.commandLink1 {
+width: 350px;
+height: 1px;
+background: yellow;
+transition: width 0.3 ease;
+position: absolute;
+margin-top: 23px;
+}
+
+.bigLink1 a {
+    font-size: 12px;
+} 
+
+.bigLink2 a {
+    font-size: 12px;
+}
+
+.commandLink2 {
+width: 350px;
+height: 1px;
+background: yellow;
+transition: width 0.3 ease;
+position: absolute;
+margin-top: 35px;
+}
+
+
+/* The big text style */
+
+
+.paraTartine {
+display: flex;
+flex-direction: column;
+gap: 10px;
+margin: 20px;
+padding: 20px;
+margin-top: 40px;
+}
+
+.titleBreak2 {
+    display: none;
+}
+
+.titleH4 {
+margin-top: 40px;
+}
+
+.title2 p {
+ font-size: 27px;
+ word-spacing: 15px;
+}
+
+.myBreak {
+    display: none;
+}
+
+
+/* Turn style  */
+
+
+.TurnContent {
+display: flex;
+flex-direction: column;
+gap: 30px;
+margin: 20px;
+position: relative;
+top: 80px;
+margin:10px;
+padding: 10px;
+}
+
+.TurnContent p {
+font-size: 17px;
+word-spacing: 7px;
+}
+
+.TurnContent a {
+color: #777;
+text-decoration: none;
+position: relative;
+top: 20px;
+}
+
+
+.TurnContent img {
+width: 100%;
+border-radius: 10px;
+}
+
+
+.manufactory {
+width: 245px;
+height: 1px;
+background: yellow;
+transition: width 0.3 ease;
+position: absolute;
+margin-top: 30px;
+}
+
+
+.TurnContent a:hover {
+text-decoration: underline;
+}
+
+.TurnContent h4 {
+font-size: 25px;
+word-spacing: 13px;
+margin-top: 30px;
+}
+
+.mission {
+    display: none;
+}
+
+/* Big paragraph styles */ 
+
+
+.bigPara {
+position: relative;
+top: 110px;
+margin-left: 20px;
+}
+
+
+.bigPara p {
+font-size: 20px;
+word-spacing: 4px;
+}
+
+
+/* Carrousel styles */
+
+
+.carrouselContent {
+display: flex;
+flex-direction: column;
+gap: 20px;
+margin-top: 170px;
+}
+
+.carrouselContent p {
+font-size: 14px;
+width: 100%;
+}
+
+.carrouselPara {
+margin: 20px;
+}
+
+
+#carrousel {
+display: flex;
+flex-direction: row;
+margin: 6px;
+}
+
+.carrouselImage1 img {
+width: 200px;
+height: 420px;
+border-radius: 10px;
+}
+
+.carrouselImage2  img{
+width: 150px;
+height: 300px;
+position: relative;
+top: 52px;
+border-radius: 10px;
+}
+
+/* Coff images styles  */
+
+
+.partainer {
+margin-top:30px;
+}
+
+.partainer h3 {
+margin-top:30px;
+font-size:15px;
+word-spacing:5px;
+}
+
+
+.cafeLink {
+width: 309px;
+height: 1px;
+background: yellow;
+transition: width 0.3 ease;
+    /* position: absolute; */
+margin-top: 35px;
     /* display: none; */
-    padding-bottom: 284px;
-    transform: translate(-100%);
-    transition: transform 0.3s ease;
-   }
-
-
-   #close {
-    position: relative;
-    bottom: 55px;
-    font-size: 28px;
-   }
-
-   .groupLinks.open {
-    display: block;
-    transform: translateX(0);
-  }
-
-  #emplacementOut {
-    color: #777;
-    font-size: 20px;
-    text-decoration: none;
-  }
-
-  .group2Content {
-    background-color: white;
-    border: 1px solid #ccc;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(7, 3, 3, 0.1);
-    width: 125px;
-    z-index: 1000;
-    display: none;
-    position: absolute;
-    bottom: 593px;
-    left: 18%;
-
-   }
-
-   .group2Content.open1 {
-    display: block;
-   }
-
-   .group2Content a {
-    text-decoration: none;
-    color: #777;
-    font-size: 20px;
-   }
-
-   .group2Content a:hover {
-    text-decoration: underline;
-   }
-
-   .linksGroup2 {
-    position: relative;
-   }
-
-   .lastBr1, .lastBr2, .lastBr3, .lastBr4, .lastBr5 {
-    display: none;
-   }
-
-   .btnGroup {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    position: absolute;
-    right: -3%;
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 3px;
-   }
-
-   .btnGroup a {
-    color: black;
-    text-decoration: none;
-    font-size: 11px;
-   }
-
-   .btn  button:hover {
-    text-decoration: underline;
-    background-color: yellow;
-   }
-
-   .btnLinks {
-    position: relative;
-   }
-
-   .btnGroup button {
-    border: 2px solid yellow;
-    /* padding: 10px 24px 10px 24px; */
-    width: 200px;
-    height: 37px;
-    /* text-align: center; */
-    cursor: pointer;
-   }
-
-   .imagesContainer img {
-       width: 100%;
-   }
-
-   .imagesContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    margin: 13px 0;
-    padding: 20px;
-    margin-top: 95px;
-   }
-
-   .imagesContainer a {
-    color: black;
-    text-decoration: none;
-   }
-
-   .prod18Image {
-    margin-top: 40px;
-   }
-
-   .prod18Image p {
-    font-size: 17px;
-   }
-
-   .prod18Image h4 {
-    margin-top: 25px;
-   }
-
-   .prod18Image a {
-    position: relative;
-    top: 10px;
-   }
-
-   .prod33Image {
-    margin-top: 40px;
-   }
-
-   .prod33Image h4 , p {
-    margin-top: 40px;
-   }
-
-
-   .prod33Image p {
-    font-size: 17px;
-   }
-
-   .break {
-    display: none;
-   }
-
-   .prod33Image ul {
-    margin-left: 30px;
-    margin-top: 10px;
-   }
-
-   .imagesContainer a:hover {
-    text-decoration: underline;
-   }
-
-   
-   .linksPlacement {
-    display: flex;
-    flex-direction: column;
-    gap: 27px;
-    position: relative;
-    margin-left: 20px;
-    margin-top: 30px;
-    padding: 10px;
-   }
-
-   .linksEmplacement a {
-    text-decoration: none;
-    color: #777;
-    font-size: 20px;
-   }
-
-   .links {
-    margin-top: 13px;
-   }
-
-   .groupContainer {
-    position: relative;
-   }
-
-   .linksBottom {
-    margin-top: 30px;
-    margin-left: 22px;
-    
-   }
-
-   .LinksTop {
-    margin-top: 30px;
-    margin-left: 22px;
-   }
-
-   .marginTop {
-    margin-top: 20px;
-   }
-
-   .marginCenter {
-    margin-top: 20px;
-   }
-
-   .marginBottom{
-     margin-top: 20px;
-   }
-
-   .linksCenter {
-    margin-top: 30px;
-    margin-left: 22px;
-    
-   }
-
-   .groupLinks a:hover {
-    text-decoration: underline;
-   }
-
-   .imageContent {
-    height: 100%;
-    max-width: 100%;
-   }
-
-   .titleContent {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    z-index: 1;
-    padding: 0 1.5rem 1.75rem;
-   }
-
-   header {
-    background-color:  rgb(253, 249, 245);
-    display:flex;
-    justify-content: center;
-    text-align: center;
-    height: 62px;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    -webkit-box-align: center;
-    -webkit-box-pack: center;
-    gap: 10px;
-
-   }
-
-   .emplacement, .aPropos {
-    display: none;
-   }
-
-   .imageContent2 {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-   }
-
-
-   .imageContent2 a{
-    color: #777;
-   }
-
-   .image1Content img {
-    width: 160px;
-    height: 210px;
-    margin: 0 auto;
-   }
-
-   .TurnContent {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin: 20px;
-    position: relative;
-    top: 80px;
-   }
-
-   .TurnContent p {
-    font-size: 17px;
-    word-spacing: 13px;
-   }
-
-   .TurnContent a {
-    color: #777;
-    text-decoration: none;
-    position: relative;
-    top: 20px;
-   }
-
-   .TurnContent a:hover {
-    text-decoration: underline;
-   }
-
-   .TurnContent h4 {
-    font-size: 25px;
-    word-spacing: 13px;
-    margin-top: 30px;
-   }
-
-   .aport1 {
-    display: none;
-   }
-
-   .TurnContent img {
-    width: 100%;
-   }
-
-  .Content2 {
-    margin-left: 25px;
-    margin-top: 25px;
-  }
-
-  .cacher {
-    display: none;
-  }
-
-  .imageContent2 {
-    margin-top: 23px;
-    
-  }
-
-  .imageContent2 p {
-    font-size: 20px;
-    margin-top: 20px;
-  }
-
-  .image2Content img {
-    width: 86%;
-    height: 210px;
-    margin: 0 auto;
-  }
-
-  .imageBig  {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    gap: 20px;
-    margin: 20px;
-    position: relative;
-    top: 20px;
-  }
-
-  .imageBig p {
-    font-size: 17px;
-  }
-
-  .imageBig a {
-    color: #777;
-    text-decoration: none;
-  }
-
-  .imageBig a:hover {
-    text-decoration: underline;
-  }
-
-  .imageBig img {
-    width: 100%;
-  }
-
-  .bottomHeader {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-   
-  .bottomHeader img {
-    cursor: pointer;
-  }
-
-  .bottomHeader a {
-    text-decoration: none;
-    color: #777;
-  }
-
-  .expedition:hover {
-   text-decoration: underline;
-  }
-
-  .command {
-    background-color: rgb(200, 126, 30);
-    text-align: center;
-    transition: 250ms ;
-    align-items: center;
-    border-radius: 1px;
-    cursor: pointer;
-    width: 100%;
-    padding: 10px 6px;  
-  }
-
-  .paragraphContent p {
-    word-spacing: 2.5px;
-  }
-
-  .prod33Image p, h4 , a , ul{
-    word-spacing: 10px;
-  }
-  
-  .prod18Image h4, p , a {
-    word-spacing: 10px;
-  }
-
-  .paragraphContent a {
-    position: relative;
-    top: 30px;
-  }
-
-  .paraTartine {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin: 20px;
-    padding: 20px;
-  }
-
-  .titleH4 {
-    margin-top: 40px;
-  }
-
-  .bigPara {
-    position: relative;
-    top: 110px;
-    /* padding: 10px; */
-    margin: 15px;
-  }
-
-  .telBr {
-    display: none;
-  }
-
-  .bigPara p {
-    font-size: 20px;
-  }
-
-  .paraTartine p, h4 {
-    word-spacing: 10px;
-  }
-
-  .paraTartine p{
-    font-size: 30px;
-  }
-
-  .intendance {
-    display: none;
   }
  
-  .coffeImage {
-    display:flex;
-    flex-direction:column;
-    gap:20px;
-    margin:10px;
-    padding:10px;
-  }
+.coffeImage {
+display:flex;
+flex-direction:column;
+gap:20px;
+margin:10px;
+padding:10px;
+}
 
-  .coffeImage img {
-    width:100%;
-  }
-
-  .coffeImage p {
-    font-size:13px;
-    word-spacing:10px
-  }
-
-  .coffeImage a {
-    text-decoration:none;
-    color:#777;
-    position:relative;
-    top:30px;
-  }
-
-  .partainer {
-    margin-top:30px;
-  }
-
-  .cafeLink {
-    width: 309px;
-    height: 1px;
-    background: yellow;
-    transition: width 0.3 ease;
-    /* position: absolute; */
-    margin-top: 35px;
-    /* display: none; */
-  }
-
-  .manufactory {
-    width: 245px;
-    height: 1px;
-    background: yellow;
-    transition: width 0.3 ease;
-     position: absolute;
-    margin-top: 30px;
-  }
-
-  .freeLink {
-    width: 255px;
-    height: 1px;
-    background: yellow;
-    transition: width 0.3 ease;
-     position: absolute;
-    margin-top: 50px;
-  }
-
-  .commandLink1 {
-    width: 499px;
-    height: 1px;
-    background: yellow;
-    transition: width 0.3 ease;
-     position: absolute;
-    margin-top: 23px;
-  }
-
-  
-  .commandLink2 {
-    width: 499px;
-    height: 1px;
-    background: yellow;
-    transition: width 0.3 ease;
-     position: absolute;
-    margin-top: 35px;
-  }
-
-  .emplacementTrait {
-    width: 350px;
-    height: 1px;
-    background: yellow;
-    transition: width 0.3 ease;
-     position: absolute;
-    margin-top: 27px;
-  }
-
-  .emplacementHidden {
-    display: none;
-    position: relative;
-    bottom: 160px;
-    z-index: 1000;
-  }
-
-  .emplacementHidden.hidden {
-    display: block;
-  }
-
-  .outContent {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .propOut {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 30px;
-  }
-
-
-  .pressTrait {
-    width: 350px;
-    height: 1px;
-    background: yellow;
-    transition: width 0.3 ease;
-     position: absolute;
-    margin-top: 40px;
-  }
-
-
-  .commandTrait {
-    width: 350px;
-    height: 1px;
-    background: yellow;
-    transition: width 0.3 ease;
-    position: absolute;
-    margin-top: 20px;
-  }
-
-
-  .joinTart{
-
-    position: relative;
-    top: 25px;
-  }
-
-  .commandOut {
-    position: relative;
-    top: 20px;
-  }
-
-  .press {
-   position: relative;
-   top: 40px;
-  }
-
-  .partainer h3 {
-    margin-top:30px;
-    font-size:15px;
-    word-spacing:5px;
-  }
-
-  .coffeImage a:hover {
-    text-decoration:underline;
-  }
-
-  .imgContent {
-    display:flex;
-    flex-direction: row;
-    gap: 15px;
-    margin-left: 20px;
-    margin-top: 35px;
-    padding: 15px;
-  }
-
-  .imgContent img {
-    width: 100%;
-    height: 200px;
-    text-align: center;
-  }
-
-  .cofffe  img {
+.coffeImage img {
     width: 100%;
     text-align: center;
     max-width: 100%;
-  }
+    border-radius: 10px;
+}
 
-  .bread {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    margin-top: 10px;
-  }
+.cofffe img {
+width: 100%;
+border-radius: 10px;
+}
 
-  .bread img {
-    width: 100%;
+.cofffe {
     text-align: center;
-    max-width: 100%;
-  }
+    margin: 10px;
+    padding: 10px;
+}
 
-  .img1 img {
-    height: 200px;
-  }
 
-  .img2 img {
-    height: 200px;
-  }
+.coffeImage p {
+font-size:13px;
+word-spacing:6px ;
+}
 
-  .command a {
-    color: white;
-  }
+.coffeImage a {
+text-decoration:none;
+color:#777;
+position:relative;
+top:30px;
+}
 
-  .inputContent {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    margin-top: 20px ;
-    margin-left: 30px;
-    max-width: 100%;
-    max-height: 100%;
-  }
 
-  .inputConte {
+.coffeImage a:hover {
+text-decoration:underline;
+}
+
+/* Image Content styles  */
+
+.imgContent {
+display:flex;
+flex-direction: row;
+gap: 15px;
+margin-left: 20px;
+margin-top: 35px;
+padding: 15px;
+}
+
+.imgContent img {
+width: 100%;
+height: 200px;
+text-align: center;
+border-radius: 10px;
+}
+
+
+.bread {
+display: flex;
+flex-direction: row;
+gap: 20px;
+/* margin-top: 10px; */
+margin: 15px;
+padding: 10px;
+}
+
+.bread img {
+width: 100%;
+text-align: center;
+max-width: 100%;
+border-radius: 10px;
+}
+
+
+.img1 img {
+width: 100%;
+height: 200px;
+border-radius: 10px;
+}
+
+
+.imageContent2 {
+margin-top: 23px;
+    
+}
+
+.imageContent2 p {
+font-size: 20px;
+margin-top: 20px;
+}
+
+.image2Content img {
+width: 86%;
+height: 210px;
+margin: 0 auto;
+border-radius: 10px;
+}
+
+.img2 img {
+height: 200px;
+border-radius: 10px;
+}
+
+
+.inputConte {
+padding: 20px;
+display: flex;
+flex-direction: column;
+gap: 40px;
+}
+
+.containerInput {
     border: 1px solid #ccc;
-    width: 300px;
-    padding: 20px;
-    height: 65px;
-    text-align: center;
-  }
+    padding: 45px;
+    margin: 30px;
+}
+
+.inputContent a {
+color: #777;
+margin-left: 110px;
+text-decoration: none;
+word-spacing: 18px;
+}
+
+.joinNow {
+text-align: center;
+}
+
+input {
+border: 2px solid #ccc;
+border: none;
+background-color: transparent;
+}
+
+input::placeholder {
+word-spacing: 1px;
+font-size: 11px;
+}
+
+/* Media Query */
+
+
+/* The footer styles  */
+
+
+.bread {
+display: flex;
+flex-direction: row;
+gap: 20px;
+margin-top: 20px;
+}
+
+.inputConte {
+border: 1px solid transparent;
+
+}
+
+.inputContent {
+background-color:  rgb(253, 249, 245);
+
+}
 
   
-  .inputContent a {
-    color: #777;
-    margin-left: 110px;
-    text-decoration: none;
-    word-spacing: 18px;
-  }
+input:focus {
+border: 1px solid transparent;
+outline: none;
+}
 
-  .joinNow {
-    text-align: center;
-  }
+.inputContent a {
+/* display: none; */
+}
 
-  input {
-    /* border: 1px solid transparent; */
-    border: none;
-    width: 300px;
-    padding: 20px;
-    height: 30px;
-    background-color: transparent;
-  }
+.footerLinks {
+display: block;
+}
 
-  input::placeholder {
-    word-spacing: 1px;
-    font-size: 15px;
-  }
 
-  .lienBottom {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin: 50px;
-    padding: 20px;
-    max-width: 100%;
-  }
+.classFacebook {
+position: relative;
+top: 30px;
+}
 
-  .lienPara p {
-    font-size: 20px;
-    word-spacing: 10px;
-  }
 
-  .h2 {
-    color: rgb(228, 106, 106);
-    margin-top: 30px;
-    font-size: 30px;
-  }
+.lienBottom {
+display: flex;
+flex-direction: column;
+gap: 30px;
+margin: 50px;
+padding: 20px;
+max-width: 100%;
+}
 
-  .lienPara a {
-    text-decoration: none;
-    color: #777;
-  }
+.lienPara p {
+font-size: 20px;
+word-spacing: 10px;
+}
 
-  .lienPara h2 {
-    margin-top: 40px;
-  }
+.h2 {
+color: rgb(228, 106, 106);
+margin-top: 20px;
+font-size: 20px;
+}
 
-  .lienPara a:hover {
-    text-decoration: underline;
-  }
+.lienPara a {
+text-decoration: none;
+color: #777;
+}
 
-  .footerLinks {
+.lienPara h2 {
+margin-top: 40px;
+}
+
+.lienPara a:hover {
+text-decoration: underline;
+}
+
+.footerLinks {
+display: none;
+}
+
+  
+.paragraphContent a {
+position: relative;
+top: 30px;
+}
+
+
+
+@media(min-width: 1025px) {
+
+
+.commandLink1 {
+width: 450px;
+height: 1px;
+background: yellow;
+transition: width 0.3 ease;
+position: absolute;
+margin-top: 23px;
+}
+
+
+.commandLink2 {
+width: 450px;
+height: 1px;
+background: yellow;
+transition: width 0.3 ease;
+position: absolute;
+margin-top: 23px;
+}
+.paraTartine  {
+    position: relative;
+    left: 350px;
+}
+
+
+.paraTartine h3 {
+    font-size: 32px;
+}
+
+.paraTartine p {
+     font-size: 40px;
+}
+
+
+.titleH4 {
+/* position: absolute; */
+/* right: 20%; */
+}
+
+.title2 {
+/* position: absolute; */
+/* right: 26%; */
+/* margin-top: 10%; */
+  }
+  
+.aport1 {
+display: block;
+}
+
+   
+.leftTitle {
+margin-top: 80px;
+}
+
+.leftTitle h4 {
+word-spacing: 30px;
+font-size: 2em;
+}  
+
+    
+.emplacementHidden {
+position: relative;
+bottom: 116px;
+}
+/* The footer styles  */
+
+.grpLien  {
+display: flex;
+flex-direction: row;
+gap: 50px;
+margin-left: 70px;
+margin-top: 70px;
+}
+
+.grpLien a {
+color: #777;
+text-decoration: none;
+font-size: 20px;
+word-spacing: 10px;
+}
+
+
+.lienBottom {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin: 20px;
+padding: 20px;
+}
+
+.h2 {
+position: relative;
+top: 70px;
+} 
+
+.lienPara a:hover {
+text-decoration: underline;
+}
+
+.grpLien a:hover {
+text-decoration: underline;
+}
+
+
+.img1 img {
+width:1010px ;
+height: 700px;
+border-radius: 10px;
+}
+
+.img2 img {
+width: 500px;
+height: 700px;
+border-radius: 10px;
+}
+
+.h2 {
+    font-size: 35px;
+}
+
+.imgContent {
+display: flex;
+flex-direction: row;
+gap: 25px;
+margin-top: 50px;
+}
+
+.imgContent img  {
+width: 400px;
+height: 490px;
+text-align: center;
+}
+
+.bread {
+display: flex;
+flex-direction: row;
+gap: 20px;
+margin-top: 20px;
+}
+
+.containerInput {
+border: 1px solid transparent;
+}
+
+ 
+.joinNow {
+margin-top: 36px;
+position: relative;
+left: 150px;
+}
+
+.bread img {
+text-align: center;
+max-width: 100%;
+}
+
+.inputConte  {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+background-color:  rgb(253, 249, 245);
+padding: 1px;
+}
+
+  
+.inputContent a {
+display: none;
+}
+
+.footerLinks {
+display: block;
+}
+
+
+.intendance {
+display: block;
+}
+
+.classFacebook {
+position: relative;
+top: 30px;
+}
+/* Header style  */
+
+/* Division un style */
+
+header br {
+display: none;
+}
+
+header p {
+position: relative;
+bottom: 17px;
+font-size: 15px;
+}
+    
+header a {
+font-size: 15px;
+}
+
+header {
+gap: 10px;
+position: relative;
+left: 190px;
+}
+
+.headerPara1 {
+position: relative;
+bottom: 24px;
+/* position: fixed; */
+/* z-index: 1; */
+}
+
+.paraContent {
+z-index: 1000;
+position: fixed;
+}
+.emplacementHidden {
+display: block;
+}
+
+
+.emplacementTrait, .commandTrait, .pressTrait, .press,  .joinTart, .commandOut , .propOut, .outContent {
+display: none;
+}
+
+#emplacementOut {
+display: none;
+}
+
+.emplacement:hover {
+text-decoration: underline;
+}
+
+.emplacementContent {
+display: flex;
+gap: 33px;
+position: relative;
+right: 90px;
+margin-top: 10px;
+}
+
+.aPropos:hover {
+ text-decoration: underline;
+}
+
+.emplacement, .aPropos  {
+display: block;
+}
+
+.title1Content , .paraContent{
+position: relative;
+right: 44px;
+}
+
+.expeditionContent {
+display: flex;
+gap: 10px;
+}
+
+.bottomHeader img {
+display: none;
+}
+
+.expedition {
+ margin-top: 10px;
+}
+
+.title1 {
+font-size: 4rem;
+word-spacing: 15px;
+}
+
+.para1 {
+ font-size: 2.4rem;
+ word-spacing: 15px;
+}
+
+.titleteContent {
+    position: relative;
+    bottom: 210px;
+}
+
+.imageContent img {
+ height: 740px;
+ width: 100%;
+}
+
+.command {
+ position: relative;
+ left: 10px;
+}
+
+.Tartine {
+font-size: 25px;
+margin-right: 90px;
+}
+
+/* styles division deux */
+
+
+.linksEmplacement {
+position: relative;
+}
+
+
+.groupLinks  {
+display: none;
+position: absolute;
+top: 28%;
+height: 440px;
+} 
+
+.linksPlacement a {
+ color: white;
+}
+
+
+.linksGroup2 {
+  position: relative;
+  top: 36px;
+  left: 20px;
+}
+
+.group2Content {
+  /* position: absolute; */
+  /* bottom: 20px; */
+}
+
+.iconDown  {
+display: none;
+}
+
+ 
+#close {
+display: none;
+}
+
+.linksPlacement  {
+/* display: block; */
+display: flex;
+flex-direction: row;
+gap: 50px;
+margin-top: 90px;
+z-index: 1;
+position: absolute;
+bottom: 88px;
+}
+
+/* styles images  */
+
+
+.titre {
+position: relative;
+top: 148px;
+}
+
+
+.Content2 {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+gap: 40px;
+}
+
+.image2Content img {
+width: 289px;
+}
+
+.image1Content img {
+width: 289px;
+}
+
+
+.image1Content p {
+font-size: 18px;
+}
+
+
+.image2Content p {
+font-size: 18px;
+}
+
+/* Button styles  */
+
+.btnLinks {
+position: relative;
+}
+
+.btnGroup {
+position: absolute;
+left: 50%;
+}
+
+/* Images  styles  */
+
+
+.big {
+display: flex;
+flex-direction: row;
+gap: 188px;
+justify-content: space-around;
+padding: 20px;
+}
+
+
+.imageBig img {
+width: 746px;
+height: 600px;
+margin-left: 70px;
+}
+
+
+.paragraphContent {
+margin-top: 190px;
+position: relative;
+right: 20px;
+}
+
+.paragraphContent p {
+word-spacing: 2.5px;
+}
+
+.paragraphContent a {
+position: relative;
+top: 15px;
+}
+
+
+.commandLink2 {
+position: relative;
+top: 30px;
+}
+
+.freeLink {
+width: 255px;
+height: 1px;
+background: yellow;
+transition: width 0.3 ease;
+/* position: absolute; */
+position: relative;
+top: 10px;
+}
+/* Two images styles  */
+
+
+.imagesContainer img {
+width: 550px;
+height: 420px;
+}
+
+
+.imagesContainer {
+display: flex;
+flex-direction: row;
+gap: 20px;
+margin-left: 70px;
+}
+
+.prod18Image a {
+position: relative;
+top: 40px;
+}
+
+.prod33Image p, h4 , a , ul{
+word-spacing: 10px;
+}
+
+.prod18Image img {
+    margin-top: 1px;
+}
+
+
+.prod18Image h4, p , a {
+word-spacing: 10px;
+}
+
+.titleBreak2 {
+    display: block;
+}
+
+.titleBreak1, .titleBreak3 {
     display: none;
-  }
+}
 
-  input:focus {
-    border: 1px solid transparent;
-    outline: none;
-  }
+.imgBreak {
+    display: block;
+}
 
-  .command:hover {
-    text-decoration: underline;
-  }
+.myBreak {
+    display: block;
+}
 
-  @media(min-width: 1025px) {
+
+/* two images style */
+
+
+.TurnContent {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
+.TurnContent  img {
+width: 700px;
+}
+
+.mission1 {
+    display: none;
+}
+
+.mission {
+    display: block;
+}
+
+
+.bigPara p {
+word-spacing: 14px;
+font-size: 40px;
+position: relative;
+top: 60px;
+margin-left: 140px;
+}
+
+
+/* Carrousel styles  */
+
+
+
+.carrouselContent {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
+.carrouselPara p {
+word-spacing: 20px;
+font-size: 18px;
+}
+
+.carrouselPara  {
+margin-top: 90px;
+}
+
+.carrouselImage1 img {
+width: 300px;
+height: 400px;
+margin-top: 40px;
+}
+
+.carrouselImage2 img {
+width: 240px;
+height: 290px;
+margin-top: 38px;
+}
+    
+  /*styles coff  */
+
+
+.coffeImage {
+display:flex;
+flex-direction:row;
+justify-content:space-around;
+}
+
+.coffeImage p  {
+font-size:15px;
+word-spacing:10px;
+}
+
+.partainer {
+margin-left:35px;
+}
+
+
 
     /* Burger Menu */
- 
-    .commandLink2 {
-      position: relative;
-      top: 30px;
-    }
-    .emplacementHidden {
-      position: relative;
-      bottom: 126px;
-    }
+    
+/* .cacher  { */
+/* display: block; */
+/* text-align: center; */
+/* } */
 
-    .command {
-      position: relative;
-      left: 10px;
-    }
-
-    .groupLinks  {
-      display: none;
-      position: absolute;
-      top: 17%;
-      height: 440px;
-    } 
    
-    .emplacementTrait, .commandTrait, .pressTrait, .press,  .joinTart, .commandOut , .propOut, .outContent {
-      display: none;
-    }
-
-    .iconDown  {
-      display: none;
-    }
-
-    #close {
-      display: none;
-    }
-
-  .emplacementHidden {
-    display: block;
-  }
-
-    #emplacementOut {
-      display: none;
-    }
-
-    header {
-        gap: 25px;
-    }
-
-    header br {
-        display: none;
-    }
-
     
-   .headerPara1 {
-    position: relative;
-    bottom: 1px;
-   }
-
-
-  .bread {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    margin-top: 20px;
-  }
-
-  .inputConte {
-    border: 1px solid transparent;
-    width: 300px;
-    padding: 20px;
-    height: 65px;
-    text-align: center;
-  }
-
-  .inputContent {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color:  rgb(253, 249, 245);
-    /* padding-bottom: 28px; */
-  }
-
-  .inputContent a {
-    display: none;
-  }
-
-  .footerLinks {
-    display: block;
-  }
-
- .grpLien  {
-  display: flex;
-  flex-direction: row;
-  gap: 50px;
-  margin-left: 70px;
-  margin-top: 70px;
-  }
-
-  .grpLien a {
-  color: #777;
-  text-decoration: none;
-  font-size: 20px;
-  word-spacing: 10px;
-  }
-
- .classFacebook {
-  position: relative;
-  top: 30px;
-  }
-
- .lienBottom {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 20px;
-  padding: 20px;
-  }
-
-  .h2 {
-  position: relative;
-  top: 70px;
-  } 
-
- .lienPara a:hover {
-  text-decoration: underline;
- }
-
-  .grpLien a:hover {
-  text-decoration: underline;
-  }
-
-
-  .inputConte {
-    position: relative;
-    right: 140px;
-  }
-
-  .joinNow {
-    margin-top: 36px;
-    position: relative;
-    left: 150px;
-  }
-
-  .bread img {
-    text-align: center;
-    max-width: 100%;
-  }
-
-  .img1 img {
-    width:1010px ;
-    height: 700px;
-  }
-
-  .img2 img {
-    width: 500px;
-    height: 700px;
-  }
-
-    header p {
-     margin-top: 6px;
-      font-size: 15px;
-    }
-    
-    header a {
-        font-size: 15px;
-    }
-
-    .imgContent {
-      display: flex;
-      flex-direction: row;
-      gap: 25px;
-      margin-top: 50px;
-    }
-
-    .imgContent img  {
-      width: 400px;
-      height: 490px;
-      text-align: center;
-    }
-
-    .coffeImage {
-      display:flex;
-      flex-direction:row;
-      justify-content:space-around;
-    }
-
-    .coffeImage p  {
-      font-size:17px;
-      word-spacing:10px;
-    }
-
-    .partainer {
-      margin-left:35px;
-    }
-    
-    .cacher  {
-      display: block;
-      text-align: center;
-    }
-
-    .paraBr {
-      display: none;
-    }
-
-    .telBr {
-      display: block;
-    }
-
-
-    .bigPara p {
-      word-spacing: 14px;
-      font-size: 40px;
-      position: relative;
-      top: 60px;
-      /* left:40px; */
-      margin-left: 190px;
-    }
-
-    .carrouselContent {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-    }
-
-    .carrouselPara p {
-      word-spacing: 20px;
-      font-size: 18px;
-    }
-
-    .carrouselPara  {
-      margin-top: 90px;
-    }
-
-    .carrouselImage1 img {
-      width: 300px;
-      height: 400px;
-      margin-top: 40px;
-    }
-
-    .carrouselImage2 img {
-      width: 240px;
-      height: 300px;
-      margin-top: 35px;
-    }
-    
-    .btnGroup {
-      position: absolute;
-      left: 38%;
-      margin-top: 99px ;
-    }
-
-    .imagesContainer {
-      display: flex;
-      flex-direction: row;
-      gap: 20px;
-      margin-left: 70px;
-    }
-
-    .imagesContainer .br1, .br2 , .br3 , .br4 , .br5 , .br6 , .br7 , .br8 {
-      display: none;
-    }
-
-   .big {
-    display: flex;
-    flex-direction: row;
-    gap: 188px;
-    justify-content: space-around;
-    padding: 20px;
-   }
-
-  
-   .aport1 {
-    display: block;
-   }
-
-   .TurnContent {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 290px;
-   }
-
-   .leftTitle {
-    margin-top: 80px;
-   }
-
-   .leftTitle h4 {
-    word-spacing: 30px;
-    font-size: 2em;
-   }
-
-
-   .TurnContent  img {
-    width: 700px;
-   }
-
-   .mission {
-    display: none;
-   }
-
-   .paraTartine p, h2 {
-    word-spacing: 25px;
-    font-size: 35px;
-   }
-
-   .paraTartine P  {
-    word-spacing: 35px;
-   }
-
-   .paraTartine {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  .titleH4 {
-    position: absolute;
-    right: 20%;
-  }
-
-  .title2 {
-    position: absolute;
-    right: 26%;
-    margin-top: 10%;
-  }
-
-  .titleBr {
-    display: none;
-  }
-
-  .intendance {
-    display: block;
-  }
-
-  .paragraphContent {
-    margin-top: 190px;
-    position: relative;
-    right: 20px;
-  }
-
-  .paragraphContent p {
-    word-spacing: 2.5px;
-  }
-
-  .paragraphContent a {
-    position: relative;
-    top: 37px;
-  }
-
-  .imageBig img {
-    width: 746px;
-    height: 600px;
-    margin-left: 70px;
-  }
-
-  .big .lastBr1, .lastBr2, .lastBr3, .lastBr4, .lastBr5 {
-    display: inline-flex;
-  }
-
-  .big .first1 , .first2 , .first3 , .first4 , .first5 , .first6 {
-    display: none;
-    /* height: 420px; */
-  }
-
-
-  .prod18Image a {
-      position: relative;
-      top: 40px;
-    }
-
-    .prod33Image p, h4 , a , ul{
-      word-spacing: 10px;
-    }
-    
-    .prod18Image h4, p , a {
-      word-spacing: 10px;
-    }
-
-    .imagesContainer .break {
-      display: block;
-    }
-
-    .imagesContainer img {
-      width: 550px;
-      height: 420px;
-    }
-
-    .Content2 {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      gap: 40px;
-    }
-
-    .titre {
-      position: relative;
-      top: 148px;
-    }
-
-    .image2Content img {
-      width: 289px;
-    }
-
-    .image1Content img {
-      width: 289px;
-    }
-
-    .manufactoryExterior {
-      margin-top: 45px;
-    }
-    .image2Content a {
-      color: #777;
-      font-size: 14px;
-    }
-
-    .imageContent2 {
-      position: relative;
-      left: 50px;
-    }
-
-    .linksEmplacement {
-      position: relative;
-    }
-
-
-    .linksPlacement a {
-      color: white;
-    }
-
-    .linksPlacement   {
-        /* display: block; */
-        display: flex;
-        flex-direction: row;
-        gap: 50px;
-        margin-top: 90px;
-        z-index: 1;
-        position: absolute;
-        bottom: 28px;
-     }
-
-    .expeditionContent {
-        display: flex;
-        gap: 10px;
-    }
-    
-    .expedition {
-        margin-top: 10px;
-    }
-
-    .Tartine {
-        font-size: 25px;
-        margin-right: 90px;
-    }
-
-    .bottomHeader img {
-        display: none;
-    }
-
-    .imageContent img {
-        height: 740px;
-    }
-
-    .emplacementContent {
-       display: flex;
-       gap: 33px;
-       position: relative;
-       right: 90px;
-      }
-
-    .emplacement:hover {
-      text-decoration: underline;
-    }
-
-    .aPropos:hover {
-        text-decoration: underline;
-    }
-
-    .emplacement, .aPropos  {
-        display: block;
-    }
-
-    .titleBr, .para1Br, .cuisineBr {
-        display: none;
-    }
-    
-    .title1Content , .paraContent{
-        position: relative;
-        right: 44px;
-    }
-
-    .title1 {
-       
-        font-size: 4rem;
-    }
-
-    .para1 {
-        font-size: 2.5rem;
-    }
-    
-  }
+.manufactoryExterior {
+ margin-top: 45px;
+}
+   
+}
